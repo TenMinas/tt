@@ -1,0 +1,16 @@
+- Assumptions
+  - All dates and times are UTC
+  - First time slot of the day == 0015
+  - Last time slot of day == 2400
+  - All time will be recorded in 15-minute blocks (96 / day)
+  - All dates and times will be drop-down or widget
+  - The "key" for each entry will be the UNIX time stamp to the second (10 digits) string
+  - All analysis (7 / 30 / 365) moving averages will be in UTC
+- Dates
+  - The date for the database will be a modified julian date YYYY.DDD
+    - generated and input manually
+  - The date for the UX will be YYYY.MM.DD format
+- Config data
+  - All config data will be stored in one or more Arangodb documents in the "tt_config" collection
+- Database name = 'tt'
+
